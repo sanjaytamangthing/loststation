@@ -24,12 +24,13 @@
     }
     @media only screen and (min-width: 1200px) {
       img {
-        width: 50%;
+        width: 60%;
+        height: auto;
       }
     }
   </style>
   <body>
-    <div style="height: 100%;">
+    <div class="img" style="display: flex; justify-content: center;">
       <img
         src="image/NewMenu.jpg"
       />
@@ -42,12 +43,12 @@
       <img class="whiteimage" src="image/W2.jpeg" /> -->
     </div>
 </body>
-<script>
+<!-- <script>
     let darkmode = false;
     let lastTap = 0;
 
     // Function to toggle images based on darkmode
-    /* function toggleImages() {
+    function toggleImages() {
         const blackImages = document.getElementsByClassName("blackimage");
         const whiteImages = document.getElementsByClassName("whiteimage");
 
@@ -68,10 +69,10 @@
         }
         
         darkmode = !darkmode;
-    } */
+    }
 
     // Detect double-tap on mobile and double-click on desktop
-    /* document.body.addEventListener("click", (event) => {
+    document.body.addEventListener("click", (event) => {
         const currentTime = new Date().getTime();
         const tapLength = currentTime - lastTap;
 
@@ -80,6 +81,6 @@
         }
 
         lastTap = currentTime;
-    }); */
-</script>
+    });
+</script> -->
 </html>
