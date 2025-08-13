@@ -9,9 +9,12 @@
   <style>
     body {
         margin: 0;
+        height:  100vh;
     }
     img {
       width: 100%;
+      height: 100%;
+      /* object-fit: cover; */
     }
     .whiteimage {
       display: flex;
@@ -26,26 +29,17 @@
     }
   </style>
   <body>
-    <div
-      style="
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      "
-    >
+    <div style="height: 100%;">
       <img
-        class="blackimage"
-        src="image/BW1.jpeg"
-        style="border-bottom: 1px solid white"
+        src="image/NewMenu.jpg"
       />
-      <img class="blackimage" src="image/BW2.jpeg" />
-      <img
+      <!-- <img class="blackimage" src="image/BW2.jpeg" /> -->
+      <!-- <img
         class="whiteimage"
         src="image/W1.jpeg"
         style="border-bottom: 1px solid black"
       />
-      <img class="whiteimage" src="image/W2.jpeg" />
+      <img class="whiteimage" src="image/W2.jpeg" /> -->
     </div>
 </body>
 <script>
@@ -53,7 +47,7 @@
     let lastTap = 0;
 
     // Function to toggle images based on darkmode
-    function toggleImages() {
+    /* function toggleImages() {
         const blackImages = document.getElementsByClassName("blackimage");
         const whiteImages = document.getElementsByClassName("whiteimage");
 
@@ -74,10 +68,10 @@
         }
         
         darkmode = !darkmode;
-    }
+    } */
 
     // Detect double-tap on mobile and double-click on desktop
-    document.body.addEventListener("click", (event) => {
+    /* document.body.addEventListener("click", (event) => {
         const currentTime = new Date().getTime();
         const tapLength = currentTime - lastTap;
 
@@ -86,6 +80,6 @@
         }
 
         lastTap = currentTime;
-    });
+    }); */
 </script>
 </html>
